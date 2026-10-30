@@ -2,7 +2,9 @@ name: Build MSR APK
 
 on:
   push:
-    branches: [main, master]
+    branches:
+      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -17,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Java 17
+      - name: Setup Java
         uses: actions/setup-java@v5
         with:
           distribution: temurin
@@ -25,18 +27,21 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-        with:
-          packages: 'platform-tools,platforms;android-35,build-tools;35.0.0'
+
+      - name: Install Android SDK packages
+        run: |
+          yes | sdkmanager --licenses || true
+          sdkmanager --install "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
 
-      - name: Build debug APK
+      - name: Build APK
         run: gradle --no-daemon assembleDebug
 
-      - name: Run unit tests
+      - name: Run Unit Tests
         run: gradle --no-daemon testDebugUnitTest
         continue-on-error: true
 
@@ -49,27 +54,19 @@ jobs:
           APK="app/build/outputs/apk/debug/app-debug.apk"
 
           if [ ! -f "$APK" ]; then
-            echo "APK file was not generated!"
+            echo "APK was not generated!"
             exit 1
           fi
 
           ls -lh "$APK"
 
-          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
-
-          "$BT/aapt2" dump badging "$APK" | grep -E "^package|sdkVersion|targetSdkVersion" | tee apk-info.txt
-
-          "$BT/apksigner" verify --print-certs "$APK" | tee -a apk-info.txt
-
-      - name: Upload APK artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: msr-debug-apk
-          path: |
-            app/build/outputs/apk/debug/app-debug.apk
-            apk-info.txt
+          path: app/build/outputs/apk/debug/app-debug.apk
 
-      - name: Upload build reports
+      - name: Upload Build Reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
