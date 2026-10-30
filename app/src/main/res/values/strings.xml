@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mega SMS Router</string>
+    <string name="app_short">MSR</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">خانه</string>
+    <string name="nav_destinations">مقصدها</string>
+    <string name="nav_rules">قوانین</string>
+    <string name="nav_history">تاریخچه</string>
+    <string name="back">بازگشت</string>
+    <string name="docs">راهنما و محدودیت‌ها</string>
+
+    <!-- Common -->
+    <string name="cancel">انصراف</string>
+    <string name="close">بستن</string>
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="test">تست</string>
+    <string name="duplicate">کپی</string>
+    <string name="enabled">فعال</string>
+    <string name="disabled">غیرفعال</string>
+    <string name="btn_save">ذخیره</string>
+    <string name="copy_suffix">" (کپی)"</string>
+
+    <!-- Home -->
+    <string name="status_ready">آماده دریافت و ارسال</string>
+    <string name="status_not_ready">آماده نیست</string>
+    <string name="reason_no_perm">مجوز دریافت پیامک داده نشده است.</string>
+    <string name="reason_no_rules">هیچ قانون فعالی با فرستنده و مقصد فعال تعریف نشده است.</string>
+    <string name="reason_no_dest">هیچ مقصد فعالی وجود ندارد.</string>
+    <string name="reason_paused">ارسال متوقف است. برای شروع، دکمه فعال‌سازی را بزنید.</string>
+    <string name="forwarding_on">وضعیت ارسال: فعال</string>
+    <string name="forwarding_off">وضعیت ارسال: متوقف</string>
+    <string name="perm_granted">مجوز دریافت پیامک: داده شده</string>
+    <string name="perm_missing">مجوز دریافت پیامک: داده نشده</string>
+    <string name="cfg_rules_count">قوانین فعال: %1$d</string>
+    <string name="cfg_dest_count">مقصدهای فعال: %1$d</string>
+    <string name="btn_pause">توقف ارسال</string>
+    <string name="btn_resume">فعال‌سازی ارسال</string>
+    <string name="btn_grant">دادن مجوز دریافت پیامک</string>
+    <string name="btn_app_settings">باز کردن تنظیمات برنامه</string>
+    <string name="recent_activity">فعالیت اخیر</string>
+    <string name="no_activity">هنوز درخواستی ارسال نشده است.</string>
+    <string name="reliability_title">پایداری در پس‌زمینه</string>
+    <string name="reliability_body">اندروید یا سازنده‌ی دستگاه ممکن است برنامه‌های پس‌زمینه را محدود کنند. اگر برنامه را به‌اجبار متوقف کنید (Force stop)، تا باز کردن دوباره‌ی آن پیامکی دریافت نمی‌شود. ارسال بدون وقفه در همه‌ی دستگاه‌ها تضمین نمی‌شود.</string>
+    <string name="battery_btn">تنظیمات بهینه‌سازی باتری</string>
+    <string name="privacy_note">فقط پیامک فرستنده‌هایی که خودتان تأیید کرده‌اید پردازش می‌شود و فقط به مقصدهایی که خودتان تعریف کرده‌اید می‌رود. هیچ داده‌ای به سرور سازنده‌ی برنامه ارسال نمی‌شود.</string>
+    <string name="confirm_title">فعال‌سازی ارسال</string>
+    <string name="confirm_body">پس از فعال‌سازی، پیامک‌هایی که با قوانین فعال شما مطابقت دارند به مقصدهای زیر ارسال می‌شوند:</string>
+    <string name="confirm_none">(هیچ مقصد فعالی وجود ندارد)</string>
+    <string name="confirm_ok">تأیید و فعال‌سازی</string>
+
+    <!-- History -->
+    <string name="hist_empty">تاریخچه خالی است.</string>
+    <string name="hist_clear">پاک کردن تاریخچه</string>
+    <string name="hist_clear_confirm">همه‌ی سوابق درخواست‌ها از این دستگاه حذف می‌شود.</string>
+    <string name="hist_details">مدت: %1$d میلی‌ثانیه، تلاش مجدد: %2$d</string>
+
+    <!-- Destinations -->
+    <string name="dest_add">مقصد جدید</string>
+    <string name="dest_edit_title">ویرایش مقصد</string>
+    <string name="dest_empty">هنوز مقصدی تعریف نشده است. با دکمه‌ی «مقصد جدید» یک API اضافه کنید.</string>
+    <string name="last_status">آخرین وضعیت: %1$s (%2$s)</string>
+    <string name="delete_dest_confirm">مقصد «%1$s» و پیوندهای آن به قوانین حذف شود؟</string>
+    <string name="test_confirm">یک درخواست آزمایشی با کد نمونه‌ی 000000 به «%1$s» ارسال می‌شود.</string>
+    <string name="btn_test_send">ارسال درخواست آزمایشی</string>
+    <string name="testing">در حال ارسال…</string>
+    <string name="test_result">نتیجه: %1$s</string>
+    <string name="test_hint">یک درخواست با کد نمونه‌ی 000000 و فرستنده‌ی MSR-TEST به همین مقصد ارسال می‌شود. به پیامک واقعی نیازی نیست.</string>
+
+    <!-- Destination editor -->
+    <string name="sec_general">تنظیمات عمومی</string>
+    <string name="sec_url">نشانی و متد HTTP</string>
+    <string name="sec_headers">هدرها</string>
+    <string name="sec_auth">احراز هویت</string>
+    <string name="sec_body">بدنه‌ی درخواست</string>
+    <string name="sec_placeholders">متغیرهای قابل استفاده</string>
+    <string name="sec_timeout">زمان‌بندی و تلاش مجدد</string>
+    <string name="sec_test">درخواست آزمایشی</string>
+    <string name="field_name">نام</string>
+    <string name="field_enabled">فعال</string>
+    <string name="field_priority">اولویت (عدد کمتر = زودتر)</string>
+    <string name="field_url">نشانی (URL)</string>
+    <string name="allow_http">اجازه‌ی HTTP ناامن (فقط برای تست محلی)</string>
+    <string name="http_warning">هشدار: با HTTP داده‌ها بدون رمزنگاری ارسال می‌شوند. فقط برای سرور محلی یا آزمایشی استفاده کنید.</string>
+    <string name="header_name">نام هدر</string>
+    <string name="header_value">مقدار</string>
+    <string name="header_add">افزودن هدر</string>
+    <string name="header_remove">حذف این هدر</string>
+    <string name="auth_none">بدون احراز هویت</string>
+    <string name="auth_bearer">Bearer</string>
+    <string name="auth_basic">Basic</string>
+    <string name="auth_apikey">API Key</string>
+    <string name="field_token">توکن</string>
+    <string name="field_username">نام کاربری</string>
+    <string name="field_password">رمز عبور</string>
+    <string name="field_apikey_header">نام هدر کلید</string>
+    <string name="field_apikey_value">مقدار کلید</string>
+    <string name="secret_note">مقادیر محرمانه رمزنگاری‌شده (Android Keystore) ذخیره می‌شوند و در لیست‌ها نمایش داده نمی‌شوند.</string>
+    <string name="body_none">بدون بدنه</string>
+    <string name="body_json">JSON</string>
+    <string name="body_form">Form</string>
+    <string name="body_text">متن ساده</string>
+    <string name="body_get_hint">در GET بدنه ارسال نمی‌شود. در حالت Form، الگو (مثلاً code={{code}}) به پارامترهای کوئری تبدیل می‌شود.</string>
+    <string name="field_body">الگوی بدنه</string>
+    <string name="placeholders_help">متغیرها با دو آکولاد نوشته می‌شوند و هنگام ارسال با مقدار واقعی جایگزین می‌شوند. در JSON فقط داخل مقدارهای رشته‌ای جایگزین می‌شوند و کاراکترهای خاص خودکار escape می‌شوند. فقط فیلدهایی که در الگو استفاده کرده‌اید برای این مقصد نگهداری و ارسال می‌شوند.</string>
+    <string name="field_connect_timeout">مهلت اتصال (ثانیه)</string>
+    <string name="field_read_timeout">مهلت دریافت پاسخ (ثانیه)</string>
+    <string name="field_retries">حداکثر تلاش مجدد (۰ تا ۱۰)</string>
+    <string name="retry_non_idempotent">تلاش مجدد برای POST و PATCH</string>
+    <string name="retry_non_idempotent_hint">فقط اگر سرور شما هدر Idempotency-Key را پشتیبانی می‌کند روشن کنید. در این حالت این هدر ارسال می‌شود تا درخواست تکراری دوبار اجرا نشود.</string>
+    <string name="success_contains">پاسخ موفق باید شامل این متن باشد (اختیاری)</string>
+
+    <!-- Issues -->
+    <string name="issue_name">نام نباید خالی باشد.</string>
+    <string name="issue_url_empty">نشانی خالی است.</string>
+    <string name="issue_url_malformed">نشانی معتبر نیست.</string>
+    <string name="issue_url_scheme">فقط https:// یا http:// پشتیبانی می‌شود.</string>
+    <string name="issue_url_http">HTTP به‌صورت پیش‌فرض مجاز نیست. از https استفاده کنید یا استثنای HTTP را روشن کنید.</string>
+    <string name="issue_header">نام یا مقدار هدر نامعتبر یا تکراری است.</string>
+    <string name="issue_json">قالب JSON نامعتبر است.</string>
+    <string name="issue_placeholder">متغیر ناشناخته در الگو وجود دارد.</string>
+    <string name="issue_get_body">در GET فقط حالت Form (پارامتر کوئری) یا بدون بدنه ممکن است.</string>
+    <string name="issue_timeout">مهلت‌ها باید بین ۱ تا ۱۲۰ ثانیه باشند.</string>
+    <string name="issue_retries">تعداد تلاش مجدد باید بین ۰ تا ۱۰ باشد.</string>
+    <string name="issue_auth_secret">مقدار توکن، رمز یا کلید وارد نشده است.</string>
+    <string name="issue_auth_user">نام کاربری وارد نشده است.</string>
+    <string name="issue_apikey_header">نام هدر کلید معتبر نیست.</string>
+
+    <!-- Rules -->
+    <string name="rule_add">قانون جدید</string>
+    <string name="rule_edit_title">ویرایش قانون</string>
+    <string name="rule_empty">هنوز قانونی تعریف نشده است. تا قانون فعالی نباشد هیچ پیامکی ارسال نمی‌شود.</string>
+    <string name="rule_summary_senders">فرستنده‌ها: %1$s</string>
+    <string name="rule_summary_dests">مقصدها: %1$s</string>
+    <string name="delete_rule_confirm">قانون «%1$s» حذف شود؟</string>
+    <string name="sec_senders">فرستنده و فیلتر</string>
+    <string name="rule_senders">فرستنده‌های مجاز (هر خط یکی)</string>
+    <string name="rule_senders_hint">مثال: شماره‌ی کامل یا نام فرستنده‌ی متنی مانند MyService. قانون بدون فرستنده هیچ پیامکی را نمی‌پذیرد.</string>
+    <string name="rule_normalize">مقایسه‌ی هوشمند شماره (+98 و 09 یکسان باشند)</string>
+    <string name="rule_keywords">کلمات کلیدی (اختیاری، هر خط یکی؛ وجود یکی کافی است)</string>
+    <string name="sec_extraction">استخراج کد</string>
+    <string name="rule_pattern">الگوی Regex (اختیاری؛ خالی = کد عددی)</string>
+    <string name="rule_group">شماره‌ی گروه خروجی (۰ = کل تطابق)</string>
+    <string name="rule_min">حداقل رقم</string>
+    <string name="rule_max">حداکثر رقم</string>
+    <string name="rule_destinations">مقصدها</string>
+    <string name="rule_no_dest">ابتدا از بخش «مقصدها» یک مقصد بسازید.</string>
+    <string name="rule_sample">تست با پیامک نمونه</string>
+    <string name="sample_sender">فرستنده‌ی نمونه</string>
+    <string name="sample_body">متن پیامک نمونه</string>
+    <string name="btn_run_test">اجرای تست</string>
+    <string name="sample_match" formatted="false">مطابق است؛ کد استخراج‌شده: %s</string>
+    <string name="sample_nomatch">مطابق نیست؛ این پیامک ارسال نمی‌شد.</string>
+    <string name="sample_note">این تست فقط روی گوشی اجرا می‌شود؛ پیامکی ارسال یا درخواستی فرستاده نمی‌شود.</string>
+    <string name="issue_rule_senders">حداقل یک فرستنده لازم است.</string>
+    <string name="issue_rule_dests">حداقل یک مقصد انتخاب کنید.</string>
+    <string name="issue_rule_pattern">الگوی Regex نامعتبر است.</string>
+    <string name="issue_rule_group">شماره‌ی گروه بیشتر از تعداد گروه‌های الگو است.</string>
+    <string name="issue_rule_digits">تعداد ارقام باید بین ۱ تا ۱۲ و حداقل ≤ حداکثر باشد.</string>
+
+    <!-- About / docs -->
+    <string name="about_placeholders_title">متغیرها (Placeholders)</string>
+    <string name="about_placeholders">نحو: {{نام}} (فاصله‌ی داخل آکولاد مجاز است).\n\n{{code}} کد استخراج‌شده\n{{sender}} فرستنده\n{{message}} متن کامل پیامک\n{{timestamp}} زمان پیامک (میلی‌ثانیه از 1970)\n{{destination_id}} شناسه‌ی مقصد\n{{message_id}} شناسه‌ی داخلی پیام\n\nرقم‌های فارسی و عربی پیش از استخراج به رقم لاتین تبدیل می‌شوند. {{message}} را فقط وقتی لازم است که واقعاً می‌خواهید متن کامل پیامک به سرور برود.</string>
+    <string name="about_routing_title">مسیریابی</string>
+    <string name="about_routing">هر قانون شامل فرستنده‌های مجاز، فیلتر کلمه‌ی کلیدی، الگوی استخراج و فهرست مقصدهاست. پیامک فقط وقتی ارسال می‌شود که قانون فعال باشد، فرستنده تأیید شده باشد و کد پیدا شود. قانون «همه‌ی پیامک‌ها» وجود ندارد.\n\nاگر چند قانون با یک پیامک مطابقت کنند، قوانین به ترتیب اولویت بررسی می‌شوند و هر مقصد برای هر پیامک فقط یک‌بار درخواست می‌گیرد (قانون با اولویت بهتر برنده است). شکست یک مقصد روی مقصدهای دیگر اثری ندارد.</string>
+    <string name="about_delivery_title">تضمین ارسال</string>
+    <string name="about_delivery">ارسال «حداقل یک‌بار» (at-least-once) است، نه دقیقاً یک‌بار. اگر سرور پاسخ بدهد اما برنامه پیش از ثبت نتیجه متوقف شود، ممکن است درخواست دوباره برود. پیامک تکراری با یک کلید درهم‌شده تشخیص داده می‌شود. تلاش مجدد فقط برای خطاهای موقت (۴۰۸، ۴۲۹، ۵xx، قطعی شبکه و تایم‌اوت) و با تأخیر نمایی انجام می‌شود. برای POST و PATCH تلاش مجدد پیش‌فرض خاموش است.</string>
+    <string name="about_limits_title">محدودیت‌ها</string>
+    <string name="about_limits">• پس از Force stop یا در بعضی دستگاه‌ها با بهینه‌سازی شدید باتری، پیامک ممکن است پردازش نشود.\n• برنامه پس از نصب باید یک‌بار باز شود تا اندروید گیرنده‌ی پیامک را فعال کند.\n• اگر پیش از موفقیت، دستگاه خاموش یا بدون اینترنت باشد، ارسال پس از برقراری اینترنت ادامه می‌یابد.\n• رمزنگاری Keystore در دستگاه روت‌شده یا آلوده محافظت کامل نمی‌دهد.\n• توزیع در گوگل‌پلی به تأیید سیاست‌های مجوز پیامک نیاز دارد.</string>
+    <string name="about_privacy_title">حریم خصوصی و حذف داده</string>
+    <string name="about_privacy">هیچ تله‌متری یا تحلیل‌گری وجود ندارد. تاریخچه فقط زمان، نام مقصد، متد، میزبان، کد وضعیت و مدت را نگه می‌دارد، نه متن پیامک، کد یا هدرهای احراز هویت.</string>
+    <string name="delete_all">حذف همه‌ی تنظیمات و داده‌ها</string>
+    <string name="delete_all_confirm">همه‌ی مقصدها، قوانین، تاریخچه و صف ارسال حذف و ارسال متوقف می‌شود. این کار بازگشت‌پذیر نیست.</string>
+</resources>
